@@ -1,2 +1,3 @@
-# immortal-plug
-Working on Wordpress Plugin functionality
+# Immortal-Theme
+
+- A simple wordpress theme

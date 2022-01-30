@@ -1,3 +1,19 @@
-<?php get_header(); ?>
-<h1>hello index file</h1>
-<?php get_footer(); ?>
+<?php 
+get_header();
+
+if( have_posts() ) :
+    while ( have_posts() ): the_post();
+
+    the_content();
+
+    endwhile;
+
+else:
+
+    _e('sorry , no posts matched your criteria', 'textdomain');
+
+endif;
+
+get_footer();
+
+?>
